@@ -1,0 +1,37 @@
+predictive-maintenance/
+├── data/
+│   ├── raw/
+│   │   ├── train_FD001.txt
+│   │   ├── test_FD001.txt
+│   │   └── RUL_FD001.txt
+│   └── predictions/
+│       └── fleet_predictions.csv
+├── models/
+    |__init__.py
+│   ├── xgboost_model.pkl
+│   └── lstm_model.pt
+├── notebooks/
+│   └── 01_predictive_maintenance.ipynb
+├── src/
+│   ├── __init__.py
+│   ├── data_pipeline.py
+│   ├── feature_engineering.py
+│   ├── evaluate.py
+│   ├── predict.py
+│   └── models/
+│       ├── __init__.py
+│       ├── xgboost_model.py
+│       └── lstm_model.py
+├── api/
+│   └── main.py
+├── dashboard/
+│   └── app.py
+├── train_xgboost.py
+├── train_lstm.py
+├── precompute_predictions.py
+├── requirements.txt
+├── Dockerfile
+├── docker-compose.yml
+├── pipeline.sh
+├── README.md
+├── .gitignore
